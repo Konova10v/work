@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B2X-zG-Ycf">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Html ArticleVC-->
+        <scene sceneID="nES-Vr-B74">
+            <objects>
+                <viewController id="B2X-zG-Ycf" customClass="HtmlArticleVC" customModule="AlefSwiftLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uac-rm-x8G" customClass="HtmlArticleView" customModule="AlefSwiftLayout" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KPC-PX-UOX">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Соглашение о конфиденциальности" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SCK-De-she">
+                                        <rect key="frame" x="82" y="27.5" width="156" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="dXh-Kk-qd4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="14"/>
+                                        <color key="textColor" name="IntranetBlackFont"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zzu-Rv-EqJ">
+                                        <rect key="frame" x="0.0" y="11" width="72" height="49"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="72" id="fZ1-aj-pSV"/>
+                                            <constraint firstAttribute="height" constant="49" id="thF-S3-ZNI"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vWV-lj-Dir">
+                                        <rect key="frame" x="248" y="11" width="72" height="49"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="LvP-cr-sOv"/>
+                                            <constraint firstAttribute="width" constant="72" id="uYI-Ak-xGs"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="SCK-De-she" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Zzu-Rv-EqJ" secondAttribute="trailing" constant="10" id="D6I-2v-iyt"/>
+                                    <constraint firstItem="SCK-De-she" firstAttribute="centerY" secondItem="Zzu-Rv-EqJ" secondAttribute="centerY" id="UrL-EP-Vw4"/>
+                                    <constraint firstItem="SCK-De-she" firstAttribute="centerX" secondItem="KPC-PX-UOX" secondAttribute="centerX" id="dM0-AW-Hwk"/>
+                                    <constraint firstAttribute="trailing" secondItem="vWV-lj-Dir" secondAttribute="trailing" id="gP9-hb-OkR"/>
+                                    <constraint firstAttribute="bottom" secondItem="vWV-lj-Dir" secondAttribute="bottom" id="k5T-nc-dyl"/>
+                                    <constraint firstItem="Zzu-Rv-EqJ" firstAttribute="leading" secondItem="KPC-PX-UOX" secondAttribute="leading" id="leY-W4-IlA"/>
+                                    <constraint firstAttribute="bottom" secondItem="Zzu-Rv-EqJ" secondAttribute="bottom" id="quL-5G-VNZ"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oav-jP-UBR">
+                                <rect key="frame" x="10" y="60" width="24" height="24"/>
+                                <state key="normal" image="icon.ArrowLeft"/>
+                                <connections>
+                                    <action selector="previousPageBtnPressed:" destination="B2X-zG-Ycf" eventType="touchUpInside" id="N9x-fm-Jh7"/>
+                                </connections>
+                            </button>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PmH-un-bh5">
+                                <rect key="frame" x="0.0" y="84" width="320" height="486"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" audio="YES" video="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VpN-Jq-lpu" firstAttribute="trailing" secondItem="PmH-un-bh5" secondAttribute="trailing" id="0Tw-d9-fhL"/>
+                            <constraint firstItem="PmH-un-bh5" firstAttribute="bottom" secondItem="VpN-Jq-lpu" secondAttribute="bottom" constant="2" id="Efg-Q1-cDB"/>
+                            <constraint firstItem="oav-jP-UBR" firstAttribute="leading" secondItem="VpN-Jq-lpu" secondAttribute="leading" constant="10" id="PRP-UX-8H0"/>
+                            <constraint firstItem="oav-jP-UBR" firstAttribute="top" secondItem="KPC-PX-UOX" secondAttribute="bottom" id="PyI-yG-6D7"/>
+                            <constraint firstItem="VpN-Jq-lpu" firstAttribute="top" secondItem="KPC-PX-UOX" secondAttribute="bottom" constant="-60" id="Zyh-bW-GJc"/>
+                            <constraint firstAttribute="trailing" secondItem="KPC-PX-UOX" secondAttribute="trailing" id="c65-G0-fyG"/>
+                            <constraint firstItem="PmH-un-bh5" firstAttribute="top" secondItem="oav-jP-UBR" secondAttribute="bottom" id="eEn-if-76T"/>
+                            <constraint firstItem="KPC-PX-UOX" firstAttribute="top" secondItem="Uac-rm-x8G" secondAttribute="top" id="hQP-FC-m4i"/>
+                            <constraint firstItem="PmH-un-bh5" firstAttribute="leading" secondItem="VpN-Jq-lpu" secondAttribute="leading" id="mVC-Lb-6wj"/>
+                            <constraint firstItem="KPC-PX-UOX" firstAttribute="leading" secondItem="Uac-rm-x8G" secondAttribute="leading" id="uHF-kD-el0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VpN-Jq-lpu"/>
+                        <connections>
+                            <outlet property="pastPageBtn" destination="oav-jP-UBR" id="8eY-0z-d47"/>
+                            <outlet property="webView" destination="PmH-un-bh5" id="1qT-Gv-w1D"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="sideMenuLeftButtonContainer" destination="Zzu-Rv-EqJ" id="J5A-ET-CUu"/>
+                        <outlet property="sideMenuRightButtonContainer" destination="vWV-lj-Dir" id="A4j-dt-6yS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZSz-up-p8t" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="599" y="46"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon.ArrowLeft" width="24" height="24"/>
+        <namedColor name="IntranetBlackFont">
+            <color red="0.23499999940395355" green="0.23499999940395355" blue="0.23499999940395355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

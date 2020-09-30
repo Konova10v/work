@@ -1,0 +1,35 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.5.0)
+  - MBProgressHUD (1.2.0)
+  - SCLAlertView (0.8)
+  - SDWebImage (5.8.4):
+    - SDWebImage/Core (= 5.8.4)
+  - SDWebImage/Core (5.8.4)
+  - SideMenuSwift (2.0.5)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0 (= 2.5.0)
+  - MBProgressHUD (= 1.2.0)
+  - SCLAlertView (= 0.8)
+  - SDWebImage
+  - SDWebImage (= 5.8.4)
+  - SideMenuSwift (= 2.0.5)
+
+SPEC REPOS:
+  trunk:
+    - ActionSheetPicker-3.0
+    - MBProgressHUD
+    - SCLAlertView
+    - SDWebImage
+    - SideMenuSwift
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: 6d79f6f3b98e2b21d218dd65a39f634ff37a27e5
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
+  SDWebImage: cf6922231e95550934da2ada0f20f2becf2ceba9
+  SideMenuSwift: c7d99c270e0fad922a14b81f1dcc7a84c764bcd5
+
+PODFILE CHECKSUM: e5cc744b91490cdeb4c4a3ee8c78110bc5740a48
+
+COCOAPODS: 1.9.1
